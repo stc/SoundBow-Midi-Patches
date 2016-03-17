@@ -16,7 +16,7 @@ Once you are ready and set with your network midi session, just launch SoundBow 
 
 - soundbow-in-dub.pd
 
-    A generative dub organizer that is based on traditional dubbing techniques (such as delay, reverb, flanger and other audio manipulations). The timing is synced with the internal clock of SoundBow (it oscillates at half hertz, aka 120 bpm). This example demonstrates how you can achieve complex soundscapes and musical formations with just a few input event. The patch is using patches from the excellent, one and only rjLib library that is available [here](https://github.com/rjdj/rjlib).
+    A generative dub organizer that is based on traditional dubbing techniques (such as delay, reverb, flanger and other audio manipulations). The timing is synced with the internal clock of SoundBow (it oscillates at 2Hz, aka 120 bpm). This example demonstrates how you can achieve complex soundscapes and musical formations with just a few input event. The patch is using patches from the excellent, one and only rjLib library that is available [here](https://github.com/rjdj/rjlib).
 
 All code is under GPLv3 Licensed unless otherwise stated. (c) Agoston Nagy / 2016
 
