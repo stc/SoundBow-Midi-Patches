@@ -1,0 +1,79 @@
+#N canvas 217 23 1086 682 10;
+#X obj 175 193 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X text 315 193 volume;
+#X obj 192 215 hsl 128 15 0 10000 0 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 0 1;
+#X text 328 214 note length;
+#X obj 462 194 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X text 602 194 volume;
+#X obj 479 216 hsl 128 15 0 10000 0 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 0 1;
+#X text 615 215 note length;
+#X obj 734 194 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X text 874 194 volume;
+#X obj 751 216 hsl 128 15 0 10000 0 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 0 1;
+#X text 887 215 note length;
+#X text 643 88 (c) Agoston Nagy (Binaura) / 2016;
+#N canvas 172 83 586 377 LICENSE-GPL 0;
+#X text 57 88 This program is free software: you can redistribute it
+and/or modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation \, either version 3 of
+the License \, or (at your option) any later version.;
+#X text 58 168 This program is distributed in the hope that it will
+be useful \, but WITHOUT ANY WARRANTY \; without even the implied warranty
+of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+General Public License for more details.;
+#X text 57 261 You should have received a copy of the GNU General Public
+License along with this program. If not \, see <http://www.gnu.org/licenses/>.
+;
+#X text 61 54 Copyright (C) 2016 \, Agoston Nagy;
+#X text 60 325 See the file LICENSE for the full license text.;
+#X restore 644 125 pd LICENSE-GPL;
+#X obj 148 84 cnv 15 100 40 empty empty SoundBow-In-Dub 20 12 1 24
+-262144 -66577 0;
+#X text 167 132 Classic Dub Manipulations on the channels;
+#X obj 163 246 patches/mChannel 1;
+#X obj 459 246 patches/mChannel 2;
+#X obj 731 246 patches/mChannel 3;
+#X obj 163 380 patches/mBassLine;
+#X obj 459 380 patches/mRiddim;
+#X obj 732 379 patches/mNoise;
+#X obj 841 379 patches/mTune;
+#X obj 734 473 patches/mEchoChamber;
+#X obj 942 381 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 163 520 dac~;
+#X obj 735 499 throw~ \$0-out-left;
+#X obj 853 499 throw~ \$0-out-right;
+#X obj 164 403 throw~ \$0-out-left;
+#X obj 282 403 throw~ \$0-out-right;
+#X obj 460 401 throw~ \$0-out-left;
+#X obj 578 401 throw~ \$0-out-right;
+#X obj 163 489 catch~ \$0-out-left;
+#X obj 281 489 catch~ \$0-out-right;
+#X connect 0 0 16 0;
+#X connect 2 0 16 1;
+#X connect 4 0 17 0;
+#X connect 6 0 17 1;
+#X connect 8 0 18 0;
+#X connect 10 0 18 1;
+#X connect 16 0 19 0;
+#X connect 17 0 20 0;
+#X connect 18 0 22 0;
+#X connect 19 0 28 0;
+#X connect 19 0 29 0;
+#X connect 20 0 30 0;
+#X connect 20 0 31 0;
+#X connect 21 0 23 0;
+#X connect 21 0 23 1;
+#X connect 22 0 23 0;
+#X connect 22 1 23 1;
+#X connect 23 0 26 0;
+#X connect 23 1 27 0;
+#X connect 24 0 23 2;
+#X connect 32 0 25 0;
+#X connect 33 0 25 1;
