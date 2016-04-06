@@ -1,7 +1,7 @@
 # SoundBow-Midi-Router
 Additional midi message handling Pure Data patches for SoundBow
 
-[logo]: https://github.com/stc/SoundBow-Midi-Patches/blob/master/patch.png
+![alt text](https://github.com/stc/SoundBow-Midi-Patches/blob/master/patch.png "Midi Patch")
 
 ## Setup 
 
