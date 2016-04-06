@@ -1,6 +1,8 @@
 # SoundBow-Midi-Router
 Additional midi message handling Pure Data patches for SoundBow
 
+[logo]: https://github.com/stc/SoundBow-Midi-Patches/blob/master/patch.png
+
 ## Setup 
 
 SoundBow supports MIDI, so it can be connected with other devices. It is based on CoreMIDI, and has been tested on OSX, should work on other operating systems too. There is a really easy way to setup a midi network through your wireless internet connection, if you follow the guidelines [on this site](http://www.musicappblog.com/wireless-network-midi-ipad-to-mac/) There can be found several good videos also on how to get started. 
